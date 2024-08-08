@@ -10,8 +10,12 @@ const Index = () => {
           Capturing the raw beauty of Norwegian landscapes through the lens of passion and precision.
         </p>
         <div className="flex space-x-4">
-          <Button as={Link} to="/gallery" className="bg-white text-black hover:bg-gray-200">Explore Gallery</Button>
-          <Button as={Link} to="/about" variant="outline" className="text-white border-white hover:bg-white hover:text-black">About Me</Button>
+          <Button asChild>
+            <Link to="/gallery" className="bg-white text-black hover:bg-gray-200">Explore Gallery</Link>
+          </Button>
+          <Button asChild variant="outline">
+            <Link to="/about" className="text-white border-white hover:bg-white hover:text-black">About Me</Link>
+          </Button>
         </div>
       </div>
     </div>
